@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block content%}
+
+  <ul>
+   {% for article in articles %}
+       <h4>{{article.title}}</h4>
+       <h6>{{article.description}}</h6>
+       <img src="{{article.urlToImage}}" alt="">
+        <div><a  href="">{{article.url}}></a</div>
+       <h6>{{article.author}}</h6>
+       <h6>{{article.id}}</h6>
+       <h6>{{article.name}}</h6>
+
+   {% endfor %}
+</ul>
+{%endblock%}
+   

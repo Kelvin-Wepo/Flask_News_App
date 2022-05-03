@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+{%block content%}
+
+
+
+
+
+    <h1 align="center" class="text-uppercase" style="margin-top: 6%;">{{cat}} NEWS </h3>
+        <div class="container">
+            <div class="card-columns">
+                {% for Source in sources %}
+
+                <div class="card">
+                    <p {{sources.id}}</p>
+                    <div class="card-body">
+                        <h5 class="card-title">{{sources.author}}</h5>
+                        <p class="card-text">{{sources.description}}</p>
+                        <a href="{{sources.url}}">
+                            <p class="card-text">Click here for more details!</p>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Publish date:{{category.time}}</small>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endblock %}
+
