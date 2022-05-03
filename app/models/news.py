@@ -1,6 +1,3 @@
-from re import S
-
-
 class News:
     '''
     News class to define News Objects
