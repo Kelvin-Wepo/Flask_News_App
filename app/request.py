@@ -64,10 +64,10 @@ def get_sources(sources):
     with urllib.request.urlopen(get_sources_url) as url:
         get_sources_data = url.read()
         get_sources_response = json.loads(get_sources_data)
-        sources_results = None
+        # sources_results = None
         if get_sources_response['sources']:
             sources_results_list = get_sources_response['sources']
-            sources_results = process_sources(sources_results_list)
+            # sources_results = process_sources(sources_results_list)
     return sources_results_list
 def process_sources(sources_results_list):
     '''

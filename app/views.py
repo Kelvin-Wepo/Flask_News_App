@@ -23,7 +23,7 @@ def sources():
     
     sources = get_sources('sources')
     title = 'Home - Find the latest news highlights'
-    return render_template('Sources.html', title=title, sources = sources)
+    return render_template('sources.html', title=title, sources = sources)
 
      
 
